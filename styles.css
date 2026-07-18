@@ -5,6 +5,23 @@ body{
     font-family: sans-serif;
 }
 
+header{
+    width: 100%;
+    box-sizing: border-box;
+    background: #6662;
+    backdrop-filter: blur(1px);
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    margin: 0 50%;
+    border-radius: 50%;
+    filter: drop-shadow(0 3px 0 #0005);
+}
+
 .bienvenida{
     width: 100%;
     height: 250px;
