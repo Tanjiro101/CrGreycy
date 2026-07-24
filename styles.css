@@ -86,11 +86,15 @@ label{
     padding-left: 4px;
 }
 
-input, textarea, button{
+input, textarea, select, button {
     margin: 5px 0 15px 0;
     width: 100%;
     background-color: #fffa;
     border: none;
+}
+
+option{
+    background: #b7a;
 }
 
 textarea{
@@ -101,4 +105,15 @@ textarea{
 
 button{
     width: 160px;
+}
+
+details{
+    border: 1px solid #a69;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 45px 15px 45px;
+}
+
+summary{
+    border-bottom: 1px solid #a69;
 }
