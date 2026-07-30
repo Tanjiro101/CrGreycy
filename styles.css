@@ -5,16 +5,26 @@ body{
     font-family: sans-serif;
 }
 
-header{
+.header{
     width: 100%;
     box-sizing: border-box;
     background: #6662;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
     position: fixed;
     z-index: 1000;
+    text-align: center;
 }
 
-.logo{
+.link__logo{
+    align-self: center;
+}
+
+.header__link{
+    display: inline-block;
+    align-self: center;
+}
+
+.header__img{
     width: 35px;
     height: 35px;
     margin: 0 50%;
@@ -46,26 +56,26 @@ a:hover{
 }
 
 .carrusel{
-    margin: auto;
+    width: auto;
+    margin-bottom: 60px;
 }
 
-.tarjeta{
+.carrusel__item{
+    display: inline-block;
     width: 250px;
-    margin: auto;
     background: linear-gradient(#a69, #a47);
     border-radius: 8px;
     text-align: center;
-    box-sizing: border-box;
     box-shadow: 0 0 15px 0 #fff9;
-    margin-bottom: 35px;
+    margin: 35px;
 }
 
-.tarjeta:hover{
+.carrusel__item:hover{
     background: linear-gradient(#b7a, #b58);
     box-shadow: 0 0 20px 0 #fff;
 }
 
-img{
+.carrusel__img{
     width: 150px;
     height: 160px;
     filter: drop-shadow(0 -1px 1px #fff6) drop-shadow(0 2px 3px #0009);
