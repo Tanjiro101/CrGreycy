@@ -1,5 +1,5 @@
 body{
-    background-color: #121212;
+    background:  linear-gradient(#f8b195, #355c7d);
     color: #ffff;
     margin: 0;
     font-family: sans-serif;
@@ -8,28 +8,37 @@ body{
 .header{
     width: 100%;
     box-sizing: border-box;
-    background: #6662;
-    backdrop-filter: blur(2px);
+    background: #0004;
+    backdrop-filter: blur(3px);
     position: fixed;
-    z-index: 1000;
-    text-align: center;
+    z-index: 20;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-.link__logo{
-    align-self: center;
+a{
+    text-decoration: none;
+    color: #d66270;
+    font-size: 24px;
+    font-weight: bold;
+    transition: font-size .5s, color .5s;
+}
+
+a:hover{
+    color: #f692a0;
+    font-size: 25px;
 }
 
 .header__link{
     display: inline-block;
-    align-self: center;
+    margin: 0 10px;
 }
 
 .header__img{
     width: 35px;
     height: 35px;
-    margin: 0 50%;
     border-radius: 50%;
-    filter: drop-shadow(0 3px 0 #0005);
 }
 
 .bienvenida{
@@ -37,42 +46,41 @@ body{
     height: 250px;
     box-sizing: border-box;
     background: linear-gradient(to top, #0009, transparent), url(../imagenes/Bienvenida.jpg) bottom / cover;
-    border-radius: 0 0 12px 12px;
     text-align: center;
-    margin-bottom: 30px;
     padding: 90px;
-}
-
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-a:hover{
-    color: #d9c;
-    font-size: 25px;
+    position: relative;
+    top: 0;
 }
 
 .carrusel{
-    width: auto;
-    margin-bottom: 60px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .carrusel__item{
     display: inline-block;
     width: 250px;
-    background: linear-gradient(#a69, #a47);
+    background-color: #ce829d;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 0 15px 0 #fff9;
     margin: 35px;
+    transition: background-color .5s, box-shadow .5s, top .5s;
+    position: relative;
+    top: 0;
 }
 
 .carrusel__item:hover{
-    background: linear-gradient(#b7a, #b58);
+    background-color: #dfa0ab;
     box-shadow: 0 0 20px 0 #fff;
+    top: -15px;
 }
 
 .carrusel__img{
@@ -91,14 +99,19 @@ p{
     padding: 0 15px 15px 15px;
 }
 
-.formulario-comentarios{
-    background: linear-gradient(#a69, #a47);
-    border-radius: 8px;
-    margin: auto;
+.contacto{
+    width: 100%;
+    position: relative;
+}
+
+.formulario-contacto{
     box-sizing: border-box;
-    width: 650px;
+    background-color: #ce829d;
+    border-radius: 12px;
+    margin: auto;
+    width: 50vw;
     padding: 25px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 label{
@@ -109,12 +122,21 @@ label{
 input, textarea, select, button {
     margin: 5px 0 15px 0;
     width: 100%;
-    background-color: #fffa;
+    background-color: #edd;
     border: none;
+    transition: .5s;
+}
+
+input, textarea, select:focus-visible{
+    outline: none;
+}
+
+button:hover{
+    box-shadow: 0 0 5px #fff;
 }
 
 option{
-    background: #b7a;
+    background: #eed;
 }
 
 textarea{
@@ -128,18 +150,18 @@ button{
 }
 
 .faq{
-    background-color: #333;
     width: 100%;
-    padding: 15px;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
 details{
-    border: 1px solid #a69;
+    background-color: #ce829d;
     border-radius: 12px;
     padding: 15px;
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 summary{
-    border-bottom: 1px solid #a69;
+    border-bottom: 2px solid #333;
 }
